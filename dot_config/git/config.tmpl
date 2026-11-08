@@ -1,0 +1,61 @@
+[user]
+	name = {{ .git.name }}
+	email = {{ .git.email }}
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+
+[init]
+	defaultBranch = master
+
+[push]
+	default = simple
+	autoSetupRemote = true
+
+[pull]
+	rebase = false
+
+[fetch]
+	prune = true
+
+[branch]
+	sort = -committerdate
+
+[diff]
+	algorithm = histogram
+	renames = true
+	mnemonicPrefix = true
+	colorMoved = default
+
+[merge]
+	conflictstyle = zdiff3
+
+[rerere]
+	enabled = true
+	autoupdate = false
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[core]
+	pager = delta
+
+[interctive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = true
+	hyperlinks = true
+
+[tag]
+	sort = version:refname
+
+[help]
+	autocorrect = prompt
