@@ -1,0 +1,18 @@
+font-family = "{{ .ghostty.font.name }}"
+font-size = {{ .ghostty.font.size }}
+window-padding-x = 8
+window-padding-y = 8
+
+command = /opt/homebrew/bin/fish
+
+# Vitallium Ghostty settings
+theme = tokyonight
+mouse-hide-while-typing = true
+shell-integration-features = ssh-env,ssh-terminfo
+bell-features = border
+quit-after-last-window-closed = false
+font-thicken = true
+font-thicken-strength = 40
+
+# Quick Terminal
+keybind = global:option+{{ .ghostty.quick_terminal_key }}=toggle_quick_terminal

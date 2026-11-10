@@ -1,0 +1,12 @@
+# Dotfiles management
+brew "chezmoi"
+
+# Git
+brew "git-delta"
+
+# Terminal
+cask "ghostty"
+brew "fish"
+
+# Development tools
+brew "mise"
